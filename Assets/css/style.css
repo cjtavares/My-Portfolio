@@ -9,13 +9,17 @@ header {
 }
 
 header h1{
+   margin: 0;
     height: 100%;
     align-items: flex-start;
+    background-color: rgb(68, 46, 168);
+    color: blanchedalmond;
+    margin-bottom: 1%;
+    margin-top: .5%;
 }
 header nav{ 
     position: absolute;
-    right: -10%;
-    margin: 0px auto;
+    right: -2%;
     width: 50%;
     font-size: 150%;
 }
@@ -29,3 +33,27 @@ header nav p{
 img {
     width: 100%;
 }
+
+main section{
+    color: rgb(15, 15, 75);
+    margin-top: 4%;
+    display: flex;
+    padding-right: 3%;
+    border-right: 5px solid rgb(15, 15, 75);
+    height: 300px;
+    position: absolute;
+    left: 25%; 
+}
+
+main section p{
+    margin-top: 0%;
+    height: 100%;
+    font-size: 300%;
+    block-size: 150%;
+    right: 200%
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
