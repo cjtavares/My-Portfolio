@@ -9,7 +9,9 @@ header {
 }
 
 header h1{
-   margin: 0;
+    box-sizing: content-box;
+    width: 32%;
+    margin: 0;
     height: 100%;
     align-items: flex-start;
     background-color: rgb(68, 46, 168);
@@ -21,17 +23,34 @@ header nav{
     position: absolute;
     right: -2%;
     width: 50%;
-    font-size: 150%;
 }
 
-header nav p{
+header nav h2{
     padding: 5%;
     display: inline;
     text-decoration: underline;
 }
 
+banner{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+banner h2 {
+    box-sizing: content-box;
+    width: 16%;
+    height: 150%;
+    position: absolute;
+    bottom: 200%;
+    right: 10%;
+    font-size: 150%;
+    background-color: rgb(15,15,75); 
+    color:blanchedalmond;
+  }  
+
 img {
-    width: 100%;
+   width: 100%;
 }
 
 main section{
@@ -42,10 +61,10 @@ main section{
     border-right: 5px solid rgb(15, 15, 75);
     height: 300px;
     position: absolute;
-    left: 25%; 
+    left: 15%; 
 }
 
-main section p{
+main section h2{
     margin-top: 0%;
     height: 100%;
     font-size: 300%;
@@ -53,7 +72,45 @@ main section p{
     right: 200%
 }
 
+main p {
+    color: rgb(15,15,75);
+    margin-top: 4%;  
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    font-size: 150%;
+}
+
 body{
     background-color: blanchedalmond;
 }
+
+main section2{
+    color: rgb(15, 15, 75);
+    margin-top: 30%;
+    display: flex;
+    padding-right: 3.75%;
+    border-right: 5px solid rgb(15, 15, 75);
+    height: 1000px;
+    position: absolute;
+    left: 15%; 
+}
+
+main section2 h2{
+    margin-top: 0%;
+    height: 100%;
+    font-size: 300%;
+    block-size: 150%;
+    right: 200%;
+}
+
+main img{
+    width: 20%;
+    margin-top: 3%;  
+    position: absolute;
+    right:49%;
+    
+}
+
 
