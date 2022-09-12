@@ -1,3 +1,6 @@
+body{
+    background-color: blanchedalmond;
+}
 header {
     margin: 0;
     padding: 0;
@@ -25,10 +28,14 @@ header nav{
     width: 50%;
 }
 
-header nav h2{
+header nav a{
+    color: blanchedalmond;
+    font-size: 150%;
     padding: 5%;
-    display: inline;
-    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: purple
 }
 
 banner{
@@ -57,33 +64,37 @@ main section{
     color: rgb(15, 15, 75);
     margin-top: 4%;
     display: flex;
-    padding-right: 3%;
-    border-right: 5px solid rgb(15, 15, 75);
-    height: 300px;
+    width: 100%;
     position: absolute;
-    left: 15%; 
+    left: 10%; 
 }
 
 main section h2{
+    padding-right: 5%;
     margin-top: 0%;
     height: 100%;
     font-size: 300%;
     block-size: 150%;
-    right: 200%
+    right: 200%;
+    border-right: 5px solid rgb(15, 15, 75);
+    height: 300px;
 }
 
-main p {
+main section p {
     color: rgb(15,15,75);
     margin-top: 4%;  
     width: 40%;
     height: auto;
     position: absolute;
-    right: 5%;
+    right: 13%;
     font-size: 150%;
 }
 
-body{
-    background-color: blanchedalmond;
+main section img{
+    width: 20%;
+    margin-top: 3%;  
+    position: absolute;
+    right:60%;   
 }
 
 main section2{
@@ -91,26 +102,63 @@ main section2{
     margin-top: 30%;
     display: flex;
     padding-right: 3.75%;
-    border-right: 5px solid rgb(15, 15, 75);
-    height: 1000px;
     position: absolute;
-    left: 15%; 
+    left: 10%; 
+    flex-wrap: wrap;
 }
 
 main section2 h2{
+    padding-right: 5%;
+    margin-top: 0%;
+    height: 100%;
+    font-size: 300%;
+    right: 200%;
+    border-right: 5px solid rgb(15, 15, 75);
+    height: 1000px;
+}
+
+main section2 img{
+    width: 50%;
+    height: 25%;
+    border: 5px solid rgb(15, 15, 75); 
+    flex-wrap: wrap; 
+    margin-left: 5%;
+}
+
+#wave{
+    width: 75%;
+}
+
+footer{
+    color: rgb(15, 15, 75);
+    margin-top: 105%;
+    display: flex;
+    padding-right: 5%;
+    position: absolute;
+    left: 8%; 
+    width: 100%;
+}
+
+footer h2{
+    padding-right: 5%;
     margin-top: 0%;
     height: 100%;
     font-size: 300%;
     block-size: 150%;
     right: 200%;
+    border-right: 5px solid rgb(15, 15, 75);
+    height: auto;
+    width: 10%;
 }
 
-main img{
-    width: 20%;
-    margin-top: 3%;  
-    position: absolute;
-    right:49%;
-    
+footer h3{
+    font-size: 150%;
+    color: rgb(15, 15, 75);
+    padding-left: 5%;
 }
 
-
+footer address h3 a{
+    font-size: 100%;
+    color: rgb(15, 15, 75);
+    padding-left: 5%
+} 
