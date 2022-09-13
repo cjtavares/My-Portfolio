@@ -17,7 +17,7 @@ header {
 
 header h1{
     box-sizing: content-box;
-    width: 32vh;
+    /* width: 25%; */
     margin: 0;
     height: 100%;
     align-items: flex-start;
@@ -25,6 +25,7 @@ header h1{
     color: blanchedalmond;
     margin-bottom: 1%;
     margin-top: .5%;
+    padding-right: 2%;
 }
 header nav{ 
     position: absolute;
@@ -42,27 +43,30 @@ header nav a:hover {
     color: purple
 }
 
-banner{
-    position: relative;
+#banner{
     text-align: center;
     color: white;
+    width: 100%;
   }
 
-banner h2 {
-    box-sizing: content-box;
-    width: 15%;
-    height: 150%;
-    position: absolute;
-    bottom: 200%;
-    right: 10%;
+.hero-image {
+    background-image: url("/Assets/Images/banner.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    
+  }
+  
+
+.hero-image h2 {
     font-size: 150%;
     background-color: var(--purpleText); 
     color:blanchedalmond;
-  }  
-
-banner img {
-   width: 100%;
-}
+    position: relative;
+    left: 65%;
+    top:30%;
+    width: 30%; 
+  }   
 
 main{
     display: flex; 
@@ -132,7 +136,8 @@ main #Work{
     border: 5px solid var(--purpleText);
     width: 100%;
     margin-top: 3%;
-}  
+}
+  
 
 footer{
     color: var(--purpleText);
@@ -152,3 +157,36 @@ footer address h3 a{
     padding-left: 5%;
 } 
 
+/* Tablets  */
+@media screen and (max-width: 1249px) {
+   h2{
+    font-size:200%;
+   }
+   h3{
+    display: flex;
+   }
+ 
+  }
+  
+  /* Large smartphones  */
+  @media screen and (max-width: 815px) {
+    header {
+      flex-wrap:wrap;
+    }
+    h1{
+        font-size: 150%;
+    }
+
+  }
+  
+  /* Small smartphones */
+  @media screen and (max-width: 576px) {
+    main #About_Me img {
+        width: 0%;
+        height: 0%;  
+    }
+    p{
+        width: 100%;
+    }
+  }
+  
