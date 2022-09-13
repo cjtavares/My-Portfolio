@@ -1,3 +1,7 @@
+:root{
+    --purpleText: rgb(72, 36, 139);
+}
+
 body{
     background-color: blanchedalmond;
 }
@@ -5,7 +9,7 @@ header {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: rgb(15, 15, 75);
+    background-color: var(--purpleText);
     color: blanchedalmond; 
     display: flex;
     align-items: center;
@@ -13,7 +17,7 @@ header {
 
 header h1{
     box-sizing: content-box;
-    width: 32%;
+    width: 32vh;
     margin: 0;
     height: 100%;
     align-items: flex-start;
@@ -46,119 +50,110 @@ banner{
 
 banner h2 {
     box-sizing: content-box;
-    width: 16%;
+    width: 15%;
     height: 150%;
     position: absolute;
     bottom: 200%;
     right: 10%;
     font-size: 150%;
-    background-color: rgb(15,15,75); 
+    background-color: var(--purpleText); 
     color:blanchedalmond;
   }  
 
-img {
+banner img {
    width: 100%;
 }
 
-main section{
-    color: rgb(15, 15, 75);
-    margin-top: 4%;
+main{
+    display: flex; 
+     flex-wrap: wrap;
+}
+
+main #About_Me{
+    color: var(--purpleText);
     display: flex;
     width: 100%;
-    position: absolute;
-    left: 10%; 
+    margin-top: 5%;
 }
 
-main section h2{
-    padding-right: 5%;
-    margin-top: 0%;
-    height: 100%;
+h2{
+    width: 15%;
     font-size: 300%;
-    block-size: 150%;
-    right: 200%;
-    border-right: 5px solid rgb(15, 15, 75);
-    height: 300px;
-}
+    border-right: 5px solid var(--purpleText);  
+    height: 100%; 
+    margin:0;
+    align-content: flex-end;
+} 
 
-main section p {
-    color: rgb(15,15,75);
-    margin-top: 4%;  
+main #About_Me p {
+    color: var(--purpleText);  
     width: 40%;
     height: auto;
-    position: absolute;
-    right: 13%;
-    font-size: 150%;
+    font-size: 150%; 
+    padding-left: 5%;  
+    align-self: center;
 }
 
-main section img{
-    width: 20%;
-    margin-top: 3%;  
-    position: absolute;
-    right:60%;   
+main #About_Me img{
+    width: 25%; 
+    padding-left: 5%;       
 }
 
-main section2{
-    color: rgb(15, 15, 75);
-    margin-top: 30%;
+main #Work{
+    color: var(--purpleText);
     display: flex;
-    padding-right: 3.75%;
-    position: absolute;
-    left: 10%; 
+    padding-top: 5%;
+    width: 100%;
+   
+}
+
+#image-container{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 82%; 
 }
 
-main section2 h2{
-    padding-right: 5%;
-    margin-top: 0%;
-    height: 100%;
-    font-size: 300%;
-    right: 200%;
-    border-right: 5px solid rgb(15, 15, 75);
-    height: 1000px;
+#lgpic{
+    width:95%; 
 }
 
-main section2 img{
-    width: 50%;
-    height: 25%;
-    border: 5px solid rgb(15, 15, 75); 
-    flex-wrap: wrap; 
-    margin-left: 5%;
+#ltpic{
+    width:47%;
 }
 
 #wave{
-    width: 75%;
+    border: 5px solid var(--purpleText);
+    width: 100%; 
+    justify-self: end;
+}
+
+#smallPic{
+    border: 5px solid var(--purpleText);
+    width: 100%;
+    margin-top: 3%;
+}
+
+#image-container p{
+    position: absolute;
+    
 }
 
 footer{
-    color: rgb(15, 15, 75);
-    margin-top: 105%;
-    display: flex;
-    padding-right: 5%;
-    position: absolute;
-    left: 8%; 
-    width: 100%;
-}
-
-footer h2{
-    padding-right: 5%;
-    margin-top: 0%;
-    height: 100%;
-    font-size: 300%;
-    block-size: 150%;
-    right: 200%;
-    border-right: 5px solid rgb(15, 15, 75);
-    height: auto;
-    width: 10%;
+    color: var(--purpleText);
+    padding-top: 5%;
+    display: flex; 
 }
 
 footer h3{
     font-size: 150%;
-    color: rgb(15, 15, 75);
     padding-left: 5%;
+    text-decoration: underline;
 }
 
 footer address h3 a{
     font-size: 100%;
-    color: rgb(15, 15, 75);
-    padding-left: 5%
+    color: var(--purpleText);
+    padding-left: 5%;
 } 
+
