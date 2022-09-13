@@ -132,12 +132,7 @@ main #Work{
     border: 5px solid var(--purpleText);
     width: 100%;
     margin-top: 3%;
-}
-
-#image-container p{
-    position: absolute;
-    
-}
+}  
 
 footer{
     color: var(--purpleText);
